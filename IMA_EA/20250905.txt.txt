@@ -1,0 +1,154 @@
+----INFO----
+2 óra elmélet, 3 óra gyakorlat
+hiányzás 30% max
+2 zh, 7. és 14. hét, 40 + 40 pont
+    50% min, kap aláírást(vizsgára mehet)
+        ha nincs aláírás akkor nincs vizsga, bukott a tárgy
+            aláíráspótló dolgozat lehet, egész éves tananyagból
+    1. zh moodle, 2. élő papíron
+villámkérdés minden héten
+    2 pont/kérdés, legalább 10(hozzáadva lesz a zh pontokhoz)
+
+vizsga 2 részés, írásbeli és csak azután szóbeli
+
+00-49  1
+50-61  2
+62-73  3
+74-85  4
+86-100 5
+
+számológépet lehet használni
+függvénytáblázatot nem
+
+
+
+----ÓRA----
+Számrendszerek
+n = 3419 = 3 * 100 + 4 * 100 + 1 * 10 + 9 * 1
+         = 3 * 10^3 + 4 * 10^2 + 1 * 10^1 + 9 * 10^0
+
+számjegyek: 0,1,2,3,4,5,6,7,8,9
+Általában: a alapú számrendszerben
+számjegyek: 0,1,...,...,a-1
+
+a = 7
+n = 162 = 1 * 7^2 + 6 * 7^1 + 2 * 7^0(7-es számrendszer)
+
+162(7) = (1 * 7 + 6) * 7 + 2
+
+n = 3419 = ?(7) = 12653(7)
+    7
+3419|3
+ 488|5
+  69|6
+   9|2
+   1|1
+   0|
+
+visszafele:
+1|1 *7 + következő sor száma
+2|9
+6|69
+5|488
+3|3419
+
+1 * 7 + 2
+(1 * 7 + 2) * 7 + 6
+.....
+
+n = 11100101111(2)
+1|1
+1|3
+1|7
+0|14 (*2, nincs +1)
+0|28
+1|57
+0|114
+1|229
+1|459
+1|919
+1|1839
+
+
+a = 16(hex)
+A = 10, B = 11, C = 12, D = 13, E = 14, F = 15
+
+A1E(16) = 
+A|10 (*16 + 1)
+1|161
+E|2590
+
+"Gyors" átváltás a-ból b-be a=b^k
+a = 16 b = 2 16 = 2^4
+
+A    1    E(16) = 101000011110(2)
+1010 0001 1110
+
+b = a^3
+8 = 2^3
+
+(0)11100101111(2) = 3457(8)
+   3  4  5  7
+
+(0)11100101111(2) = 72F(16)
+
+
+Alapműveletek
+   1101      101110  1111 - 101110 = -11111
++101111     -  1111
+ 111100       11111
+
+101111 * 1101
+    101111
+   000000
+  101111
++101111
+1001100011
+
+101101:110=111,1
+
+
+Törtek
+0,12(10)=0,0011110..... (2)
+
+0|12
+0|24
+0|48
+0|96
+1|92
+1|84
+1|68
+1|36
+0|72
+
+
+Számítógép számtárolás
+Egész számok
+15 biten
+n > 0
+n = 1312
+1312|0
+ 656|0
+ 328|0
+ 164|0
+  82|0
+  41|1
+  20|0
+  10|0
+   5|1
+   1|1
+
+0 000010100100000
+előjel + szám
+
+n = -1312
+
+fixpontos
+lebegőpontos 32bit = 1 + 8 + 23
+normálalak: -7,91 * 10^5    8,1002 * 10^-7
+
+1,....... * 10^k
+mantissza   karakterisztika - bináris alakban 127 + k
+
+
+tanári jegyzet - https://obudaiegyetem.sharepoint.com/sites/IMA2025-26/_layouts/15/Doc.aspx?sourcedoc={8d9f2ec7-6683-40b0-bf4b-f6d6102df8a2}&action=view&wd=target%28_Tartalomt%C3%A1r%2FK%C3%B6vetelm%C3%A9nye.one%7Cb374c127-7c8b-4d7d-bbfb-e6b54e53fe0e%2FK%C3%B6vetelm%C3%A9nyek%7C1eca6be4-c90f-4f81-a4e5-88b3f05c67f1%2F%29&wdorigin=NavigationUrl
