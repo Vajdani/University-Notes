@@ -1,0 +1,119 @@
+rakéták néha felrobbanak és/vagy elégnek
+
+kiss.daniel@nik.uni-obuda.hu
+
+tárgy célja:
+bevezető tantárgy, alapozás
+-algoritmusokkal való problémamegoldás
+-koncepciók megismerése, gyakorlat orientált módon
+-alapvető programozási technikák
+
+heti 45 perc, elmélet bemutatása
+
+laborgyakorlat heti 3x45 perc
+aktív részvétel
+aláírás ha teljesíted, mehetsz vizsgára
+
+elmélet + gyakorlat teljesítése szükséges a kreditért
+
+max 30% hiányzás
+
+házi feladatok
+-szeptember 22 - október 05
+-november 10 - november 30
+automatizált tesztelés és pontozás
+
+zh-k 6. és 13. héten
+C# feladatok
+max 20 + 70 = 90 pont
+
+legalább 50 pont kell
+
+csak a második zh pótolható
+
+TTK:
+-előadások rendszeres követése
+-vizsgák:
+    -jelentkezéshez laboros aláírás kell
+    -PC-n teszt, és majd szóbeli
+    -végső jegy = labor + vizsga
+
+vamossy.zoltan@nik.uni-obuda.hu     intézetigazgató
+sergyan.szabolcs@nik.uni-obuda.hu   tárgyfelelős
+pinter.adam@nik.uni-obuda.hu        házi feladat rendszer felelős
+
+
+ÓRA!!!!
+változó - névvel ellátott tároló
+adatok tárolása végrehajtás sorám
+típussal rendelkeznek:
+    -meghatározott műveletek
+    -meghatározott méret
+
+műveletek:
+-deklaráció(létrehozás)
+-értékadás( = operátor)
+-kiértékelés
+
+értelmes, helyes műveletek:
+int a = 1;
+int b = 2;
+int osszeg = a + b;
+
+hibás művelet:
+int x = true;                       //logikai érték nem rendelhető egész típusú változóhoz
+int y = 2;
+int hanyados = "Vincent Vega" / y;  //a művelet értelmetlen
+
+
+Fontosabb típusok:
+-Egész számok:
+    -byte:
+        8 bites, előjel nélkül
+        max 255
+    -int:
+        32 bites, előjeles
+        max 
+    -long:
+        64 bites, előjeles
+        max 
+-Lebegőpontos számok:
+    -float:
+        32 bites
+        6-9 pontos számjegy
+    -double:
+        64 bites
+        15-17 pontos számjegy
+-Logikai:
+    -bool:
+        1 byte
+        true/false
+-Karakteres:
+    -char
+        egy karakter
+    -string
+        több karakter
+
+
+Literálok
+-forráskódba írt értékek
+-konkrét adat
+-
+
+
+Változónevek:
+-beszédes legyen
+    ne "x" meg "asdasd" legyen lehetőleg
+-kövessük a konvenciókat
+    camelCase
+    PascalCase
+    SCREAMING_SNAKE_CASE
+
+
+Típuskonverzió
+-Típusmegfeleltetéseel      int x    = 420
+-Implicit konvrzióval       double y = x
+-Explicit konverzióval      byte z   = (byte)y
+
+
+rekéta felrobbant mert a dőlésszög szenzorból kijövő érték rosszul lett castelve a kódban (max érték overflowolt a min értékké)
