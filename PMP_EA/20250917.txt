@@ -1,0 +1,86 @@
+Tömbök
+azonos típusú értékek sorozata
+több érték kezelése egy változón keresztül
+elemek elérése indexen keresztül
+
+int[] szamok = new int[4];
+szamok[0] = 13;
+szamok[3] = 42;
+
+a változó az értéksorozat első elemének memóriacímét tárolja
+C#-ban a tömb referencia típus
+
+Stack - gyors, de kevés
+Heap  - lassú, de sok
+
+byte[] array;
+//array -> stack, érték = null
+array = new byte[5];
+//array -> heap, érték = memóriacím
+
+array[i] = 1;
+//tömb_kezdőcíme + i * típus_memória_mérete = 1
+
+//túlindexelés esetén hibát kapunk
+//viszont ez nyelv függő
+
+
+Többdimenziós tömbök
+Egy index helyett N darab index, ha a tömb N dimenziós
+Létrehozáskor N darab elemszámot kell megadnunk
+A tömbnek öszesen N1 * N2 * ... * Nd eleme lesz
+
+int[,] = matrix = new int[N, N];
+string[,,,] array4D = new string[10, 20, 10, 20];
+array4D[0, 1, 2, 3, 4] = "Just wow.";
+int numberOfElements = array4D.Length;
+int sizeDim0 = array4D.GetLength(0);
+
+Többdimenziós tömbök a memóriában
+Lineáris memória modell - egyetlen folytonos szalag
+Két eltérő lehetőség a tárolásra
+    -sorok szerint(row-major)
+    -oszlopok szerint(column-major)
+
+Mekkora a műveleteigénye egy N*M-es tömb bejárásának?
+    -Feldolgozás során N*M darab elemet kell elérnünk
+    -A két meközelítés tehát elvben ugyananyi betöltési lépést igényel
+A közvetlen memóriahozzáférés egy viszonylag "lassú" művelet
+
+
+Listák
+A tömb statikús méretű
+    -Létrehozáskor megadjuk a méretét
+    -Nem lehet rajta változtatni
+
+A lista mint absztrakt adattípus
+    -Azonos típusú értékek sorozata                     -|
+    -Több érték kezelése egyetlen változón keresztül    -|  -> tömb
+    -Elemek elérése indexen keresztül                   -|
+    -Új elem hozzáadása a listához      -|
+    -Elem törlése a listából            -| -> láncolt lista
+
+Létrehozás
+    -Tömb létrehozása adott számú elemmel
+    -Kapacitás (K)
+    -Listában lévő elemek száma (N)
+
+Elem beszúrása
+    -
+    nem voltam elég gyors :)
+
+A lista átméretezése az alábbi lépésekből áll
+    -Új tömb létrehozása(új mérettel)
+    -A lista jelenlegi elemeinek átmásolása(N lépés)
+    -A lista tárolójának lecserélése az új tömbe
+
+Additív növelés
+    -Ha a tömb megtelik, az új méret az aktuális méretnél egy fix értékkel nagyobb
+    -Előny: minimális memóriaigény
+    -Hátrány: az átméretezés költsége egyre nagyobb
+
+Arányos növelés:
+    -Ha a tömb megtelik, az új méret az aktuális méret konstansszorosa lesz
+    -Előny: az átméretezés gyakorisága expnenciálisan csökken
+    -Hátrány: a memóriahasználat exponenciálisan növekszik
+
