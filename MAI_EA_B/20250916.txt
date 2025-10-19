@@ -90,7 +90,7 @@ Példa:
     fí = arccos(0.83) = 33.7°
 
 
-Vektor meőleges vetülete
+Vektor merőleges vetülete
 a_, b_ vektorok; fí bezárt szög
 |e_| = 1
 v_ merőleges vetület
