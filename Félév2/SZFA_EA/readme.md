@@ -1,0 +1,1 @@
+# Szoftverfejlesztés alapjai - Elmélet
