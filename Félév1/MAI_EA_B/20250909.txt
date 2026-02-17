@@ -77,12 +77,12 @@ Tulajdonságok
 
 
 -Skalárral való szorzás
-v_ vektor, x eleme R
+v_ vektor, x∈R
 -v_ = 0_ vagy x = 0 akkor x * v_ = 0_
 -v_ =/= 0_ és x =/= 0 akkor (v_(1) * x; v_(2) * x)
 
 Tulajdonságok
-v_, w_ vektorok; x, u eleme R
+v_, w_ vektorok; x, u∈R
 -(x + u) * v_ = x * v_ + u  v_
 -x * (v_ + w_) = x * v_ + x * w_
 -x * (u * v_) = (u * x) * v_
@@ -91,7 +91,7 @@ v_, w_ =/= 0_
 (itt volt valami, nem láttam)
 
 Vektorok lineáris kombinációja
-v_1, v_2 vektorok; x1, x2 eleme R
+v_1, v_2 vektorok; x1, x2∈R
 v_1, v_2, ..., v_n lineáris kombinációja:
 w_ = v_1 * x1 + v_2 * x2 + v_n * xn
 
@@ -107,7 +107,7 @@ b_=(b1, b2, b3)
 
 a_ + b_ = (a1 + b1; a2 + b2; a3 + b3)
 a_ - b_ = (a1 - b1; a2 - b2; a3 - b3)
-a_ * x  = (a1 *  x; a2 *  x; a3 *  x)   x eleme R
+a_ * x  = (a1 *  x; a2 *  x; a3 *  x)   x∈R
 |a_|    = sqrt(a1^2 + a2^2 + a3^2)      (vektor hossza)
 
 a_(3; 0; 4)
@@ -117,7 +117,7 @@ a_ - b_ = (3; 0; 4) - (1; 5; 2) = (2; -5; 2)
 a_ * 3  = (3; 0; 4) * 3         = (9; 0; 12)
 |a_|    = sqrt(3^2 + 0^2 + 4^2) = 5 (sqrt(25))
 a_||b_  = a_ = x * b_           = nincs megoldás
-                                    (3; 0; 4) = x * (1; 5; 2)   x eleme R
+                                    (3; 0; 4) = x * (1; 5; 2)   x∈R
                                     3 = x * 1   x = 3
                                     0 = x * 5   x = 0
                                     4 = x * 2   x = 2

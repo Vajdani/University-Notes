@@ -28,7 +28,7 @@ array[i] = 1;
 Többdimenziós tömbök
 Egy index helyett N darab index, ha a tömb N dimenziós
 Létrehozáskor N darab elemszámot kell megadnunk
-A tömbnek öszesen N1 * N2 * ... * Nd eleme lesz
+A tömbnek öszesen N1 * N2 * ... * Nd∈lesz
 
 int[,] = matrix = new int[N, N];
 string[,,,] array4D = new string[10, 20, 10, 20];

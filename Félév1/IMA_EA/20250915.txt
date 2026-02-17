@@ -1,7 +1,7 @@
 N számok helyett Z számokat szokás használni
 
 Def: a osztólya b-nek    -   jel: a|b
-    ha van olyan x eleme Z, amelyre b = a * x
+    ha van olyan x∈Z, amelyre b = a * x
 Példa:
     2|6, mert 6 = 3 * 2                 (x = 3)
     a|a, mert a = a * 1                 (x = 1)
@@ -72,7 +72,7 @@ Tf. h:
 
     z = +-p1^Alpha1 * p2^Alpha2 * ... * pr^Alphar
     a < p1 < p2 < ... < pr
-    Alphai eleme N+
+    Alphai∈N+
     d|z     d = +-p1^Alpha1 * p2^Alpha2 * ... * pr^Alphar
     0 <= di <= Alphai
 
